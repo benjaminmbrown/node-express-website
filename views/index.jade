@@ -1,5 +1,23 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	.container
+		.jumbotron
+			.container
+				h1 How may I help you?
+				p Here's and example paragraph. I used jade templating in this project
+				a.btn.btn-primary.btn-lg(href="#") Learn More &raquo
+		.container
+			.row
+				.col-md-4
+					h2 About Us
+					p here's some text for a paragraph
+					a.btn.btn-success.btn-sm(href="#") Go here
+				.col-md-4
+					h2 The Story
+					p here's some text for a paragraph
+					a.btn.btn-success.btn-sm(href="#") Go here
+				.col-md-4
+					h2 Third Column
+					p here's some text for a paragraph
+					a.btn.btn-success.btn-sm(href="#") Go here
