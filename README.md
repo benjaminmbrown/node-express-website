@@ -6,4 +6,6 @@ Topics explored include:
 <li>Routing</li>
 <li>Jade Templating</li>
 <li>Views</li>
-<li>Nodemailer</li></ul>
+<li>Nodemailer</li>
+<il>Bootstrap</il>
+</ul>
