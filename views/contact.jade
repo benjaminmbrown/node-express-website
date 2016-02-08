@@ -3,20 +3,15 @@ extends layout
 block content
 	.jumbotron
 		.container
-			h1 Contact us
-			p Here's and example paragraph. I used jade templating in this project
-			a.btn.btn-primary.btn-lg(href="#") Learn More &raquo
-	.container
-		.row
-			.col-md-4
-				h2 About Us
-				p Bacon ipsum dolor amet ribeye hamburger landjaeger, t-bone andouille doner alcatra strip steak sirloin sausage leberkas beef ribs shoulder capicola. Chuck picanha doner, pork loin ball tip kielbasa spare ribs tail swine landjaeger tri-tip. Pancetta strip steak jerky short ribs. Venison meatloaf turkey, landjaeger brisket filet mignon strip steak beef ribs turducken kevin sirloin andouille frankfurter porchetta short ribs.
-				a.btn.btn-success.btn-sm(href="#") Go here
-			.col-md-4
-				h2 The Story
-				p Capicola prosciutto pork chop kevin. Pork chicken capicola pig picanha. Pancetta meatball beef, kevin pastrami tri-tip short loin ground round bresaola. Leberkas pork loin salami beef porchetta chicken pastrami, frankfurter t-bone meatball tenderloin.
-				a.btn.btn-success.btn-sm(href="#") Go here
-			.col-md-4
-				h2 Third Column
-				p Tri-tip frankfurter flank, venison porchetta pancetta alcatra meatloaf andouille. Tongue sirloin short loin ham hock kielbasa ground round. Capicola frankfurter prosciutto, shankle pork sirloin jowl pancetta kevin turducken ham tail leberkas pork belly. Cow drumstick kevin prosciutto, capicola landjaeger corned beef ball tip.
-				a.btn.btn-success.btn-sm(href="#") Go here
+			.form(method="post", action="contact/send")
+				h1 Contact
+				.form-group
+					label Name
+					input.form-control(type="text", name = "Name",placeholder="Enter Name")
+				.form-group
+					label Email
+					input.form-control(type="email", name = "Email",placeholder="Enter Email")
+				.form-group
+					label Message
+					input.form-control(name = "Message",placeholder="Enter Message")
+				button.btn.btn-default(type="Submit") Submit
