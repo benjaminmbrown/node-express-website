@@ -1,17 +1,16 @@
 extends layout
 
 block content
-	.jumbotron
-		.container
-			.form(method="post", action="contact/send")
-				h1 Contact
-				.form-group
-					label Name
-					input.form-control(type="text", name = "Name",placeholder="Enter Name")
-				.form-group
-					label Email
-					input.form-control(type="email", name = "Email",placeholder="Enter Email")
-				.form-group
-					label Message
-					input.form-control(name = "Message",placeholder="Enter Message")
-				button.btn.btn-default(type="Submit") Submit
+	.container
+		form(method="post", action="contact/send")
+			h1 Contact
+			.form-group
+				label Name
+				input.form-control(type="text", name = "Name",placeholder="Enter Name")
+			.form-group
+				label Email
+				input.form-control(type="email", name = "Email",placeholder="Enter Email")
+			.form-group
+				label Message
+				input.form-control(name = "Message",placeholder="Enter Message")
+			button.btn.btn-default(type="Submit") Submit

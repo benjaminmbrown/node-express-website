@@ -27,6 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));//want public folder to 
 app.use('/', routes);
 app.use('/about', about);
 app.use('/contact', contact);
+app.use('/send', contact);
 
 
 // catch 404 and forward to error handler
